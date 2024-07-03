@@ -1,0 +1,233 @@
+/* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
+/* .ibm-plex-mono-thin {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-mono-extralight {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-mono-light {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-mono-regular {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-mono-medium {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-mono-semibold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-mono-bold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ibm-plex-mono-thin-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.ibm-plex-mono-extralight-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.ibm-plex-mono-light-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ibm-plex-mono-regular-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibm-plex-mono-medium-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibm-plex-mono-semibold-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.ibm-plex-mono-bold-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+ */
+.option-one-screen, 
+.scenarioOneScreen, 
+.optionOneScreen, 
+.optionTwoScreen, 
+.lastOptionOneScreen, 
+.lastOptionTwoScreen, 
+.startButton, .scenarioButtonsOne, 
+.scenarioOneButtonOne, .scenarioOneButtonTwo, 
+.scenarioOneButtonTwo, .optionsOneScreenButtons, 
+.scenarioOneButtonThree, .scenarioOneButtonFour, 
+.optionsTwoScreenButtons, .scenarioTwoButtonThree, 
+.scenarioTwoButtonFour, .lastOptionOneScreenButtons,
+.scenarioOneEndOne, .scenarioOneEndTwo, 
+.lastOptionTwoScreenButtons, .scenarioTwoEndOne, 
+.scenarioTwoEndTwo, .lastOptionOneScreenTwo, .restartButton, .lastOptionTwoScreenTwo, .lastOptionTwoScreenThree, .lastOptionTwoScreenFour
+{
+    display: none;
+} 
+
+html,
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body with a background color or image if desired */
+body {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the title of your story */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.opening{
+    width: 100%;
+    height: 100%;
+}
+
+/* Style the story opening container */
+.scenarioOneScreen {
+    background-color: gray;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.startButton{
+    display:block; 
+    border: black, dashed, 3px; 
+    width: 150px;
+    background-color: black; 
+    font-size: 40px;
+    position: relative;
+    left:570px;
+}
+.restartButton{
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.restartButton:hover{
+    background-color: #0056b3;
+}
+.restartButton{
+    margin: 20px; 
+}
+/* Style the story image */
+.scenarioOneScreen img {
+    max-width: 200px;
+    height: 260px;
+    margin-bottom: 10px;
+}
+
+/* Style the story opening message */
+.story-opening h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style the buttons container */
+.buttons {
+    margin: 20px;
+}
+
+/* Style the option buttons */
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the screens for option one and option two */
+.optionOneScreen,
+.optionTwoScreen,
+.lastOptionTwoScreenFour,
+.lastOptionTwoScreenTwo, .lastOptionOneScreen{
+    background-color: grey;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Style the images in the screens */
+.optionOneScreen img,
+.optionTwoScreen img,
+.lastOptionTwoScreenTwo img,
+.lastOptionOneScreenTwo img, .lastOptionOneScreenTwo img {
+    width: 240px;
+    height: 260px;
+    margin-bottom: 10px;
+}
+
+/* Style the text in the screens */
+.optionOneScreen h1,
+.optionTwoScreen h1,
+.option-one-end h1,
+.option-two-end h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
